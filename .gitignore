@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+runs/*
+!runs/metaphors_based_on_role/
+reports/
+venv/

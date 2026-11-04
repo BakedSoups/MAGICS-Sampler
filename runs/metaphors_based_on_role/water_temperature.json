@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "source": "User-provided screenshots",
+    "transcription_date": "2026-11-04",
+    "limitations": [
+      "Aggregate counts and displayed excerpts only; original full responses are unavailable.",
+      "Original judge model, rubric, API parameters, and run date are unknown.",
+      "Excerpts may be shortened, as stated in the screenshots."
+    ],
+    "original_footer": [
+      "Automated judge labels include analogies and may include borderline cases. Examples are verbatim excerpts.",
+      "Full responses and evidence are preserved in the JSON files. Long examples may be shortened."
+    ],
+    "original_footer_note": "The original JSON files mentioned in the screenshots were not supplied."
+  },
+  "models": [
+    "gpt-5",
+    "o3-mini",
+    "gpt-4o",
+    "gpt-4.1-nano"
+  ],
+  "trials_per_model_per_prompt": 20,
+  "experiments": [
+    {
+      "id": "water_temperature",
+      "title": "Water temperature",
+      "total_responses": 320,
+      "prompts": {
+        "original": "How do I measure the temperature of a cup of water?",
+        "age_10": "How do I measure the temperature of a cup of water? explain like I’m 10.",
+        "college": "How do I measure the temperature of a cup of water? explain it for my college students.",
+        "researchers": "How do I measure the temperature of a cup of water? explain it for laboratory researchers."
+      },
+      "results": [
+        {
+          "model": "gpt-5",
+          "audience": "original",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-5",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 2,
+          "total_responses": 20,
+          "percentage": 10,
+          "example_excerpt": "like a science mini-mission",
+          "example_trial": 2
+        },
+        {
+          "model": "gpt-5",
+          "audience": "college",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-5",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "o3-mini",
+          "audience": "original",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "o3-mini",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 20,
+          "total_responses": 20,
+          "percentage": 100,
+          "example_excerpt": "Imagine a thermometer is like a magic stick that tells you how hot or cold something is",
+          "example_trial": 1
+        },
+        {
+          "model": "o3-mini",
+          "audience": "college",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "o3-mini",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "original",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 6,
+          "total_responses": 20,
+          "percentage": 30,
+          "example_excerpt": "Think of it as a special ruler for measuring how hot or cold something is!",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "college",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "original",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 7,
+          "total_responses": 20,
+          "percentage": 35,
+          "example_excerpt": "Think of a thermometer like a tiny ruler that can tell you the temperature.",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "college",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        }
+      ],
+      "summary": [
+        {
+          "audience": "original",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 80,
+          "min_percentage": 0,
+          "max_percentage": 0
+        },
+        {
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 35,
+          "total_responses": 80,
+          "min_percentage": 10,
+          "max_percentage": 100
+        },
+        {
+          "audience": "college",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 80,
+          "min_percentage": 0,
+          "max_percentage": 0
+        },
+        {
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 80,
+          "min_percentage": 0,
+          "max_percentage": 0
+        }
+      ]
+    }
+  ]
+}

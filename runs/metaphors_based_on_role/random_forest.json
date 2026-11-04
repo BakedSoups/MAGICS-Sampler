@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "source": "User-provided screenshots",
+    "transcription_date": "2026-11-04",
+    "limitations": [
+      "Aggregate counts and displayed excerpts only; original full responses are unavailable.",
+      "Original judge model, rubric, API parameters, and run date are unknown.",
+      "Excerpts may be shortened, as stated in the screenshots."
+    ],
+    "original_footer": [
+      "Automated judge labels include analogies and may include borderline cases. Examples are verbatim excerpts.",
+      "Full responses and evidence are preserved in the JSON files. Long examples may be shortened."
+    ],
+    "original_footer_note": "The original JSON files mentioned in the screenshots were not supplied."
+  },
+  "models": [
+    "gpt-5",
+    "o3-mini",
+    "gpt-4o",
+    "gpt-4.1-nano"
+  ],
+  "trials_per_model_per_prompt": 20,
+  "experiments": [
+    {
+      "id": "random_forest",
+      "title": "Random forest",
+      "total_responses": 320,
+      "prompts": {
+        "original": "how does random forest work?",
+        "age_10": "how does random forest work? explain like im 10",
+        "college": "how does random forest work? explain it for my college students",
+        "researchers": "how does random forest work? explain it for machine learning researchers"
+      },
+      "results": [
+        {
+          "model": "gpt-5",
+          "audience": "original",
+          "metaphor_or_analogy_count": 1,
+          "total_responses": 20,
+          "percentage": 5,
+          "example_excerpt": "wisdom of crowds",
+          "example_trial": 20
+        },
+        {
+          "model": "gpt-5",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 20,
+          "total_responses": 20,
+          "percentage": 100,
+          "example_excerpt": "A decision tree is like a game of 20 Questions",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-5",
+          "audience": "college",
+          "metaphor_or_analogy_count": 18,
+          "total_responses": 20,
+          "percentage": 90,
+          "example_excerpt": "A Random Forest is a committee of decision trees. Each tree is a weak, noisy judge; by averaging many independent judges, you…",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-5",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "o3-mini",
+          "audience": "original",
+          "metaphor_or_analogy_count": 6,
+          "total_responses": 20,
+          "percentage": 30,
+          "example_excerpt": "wisdom of the crowd",
+          "example_trial": 2
+        },
+        {
+          "model": "o3-mini",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 20,
+          "total_responses": 20,
+          "percentage": 100,
+          "example_excerpt": "each tree is like a smart friend who can answer questions",
+          "example_trial": 1
+        },
+        {
+          "model": "o3-mini",
+          "audience": "college",
+          "metaphor_or_analogy_count": 16,
+          "total_responses": 20,
+          "percentage": 80,
+          "example_excerpt": "This is similar to how a committee of experts, each with a slightly different viewpoint, can often make a better overall decision than a…",
+          "example_trial": 2
+        },
+        {
+          "model": "o3-mini",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 6,
+          "total_responses": 20,
+          "percentage": 30,
+          "example_excerpt": "builds a “forest” of decision trees",
+          "example_trial": 3
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "original",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 20,
+          "total_responses": 20,
+          "percentage": 100,
+          "example_excerpt": "Each tree gets to see a random selection of data (like your friends with random handfuls of marbles)",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "college",
+          "metaphor_or_analogy_count": 9,
+          "total_responses": 20,
+          "percentage": 45,
+          "example_excerpt": "Each tree grows based on samples of the terrain (data) and different paths (features).",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-4o",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 0,
+          "total_responses": 20,
+          "percentage": 0,
+          "example_excerpt": null,
+          "example_trial": null
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "original",
+          "metaphor_or_analogy_count": 2,
+          "total_responses": 20,
+          "percentage": 10,
+          "example_excerpt": "Random Forest leverages the wisdom of many decision trees",
+          "example_trial": 2
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 20,
+          "total_responses": 20,
+          "percentage": 100,
+          "example_excerpt": "Instead of friends, it has lots of decision trees (these are like little guessing friends).",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "college",
+          "metaphor_or_analogy_count": 18,
+          "total_responses": 20,
+          "percentage": 90,
+          "example_excerpt": "Think of it as consulting a panel of experts rather than relying on just one:",
+          "example_trial": 1
+        },
+        {
+          "model": "gpt-4.1-nano",
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 1,
+          "total_responses": 20,
+          "percentage": 5,
+          "example_excerpt": "wisdom of crowds",
+          "example_trial": 20
+        }
+      ],
+      "summary": [
+        {
+          "audience": "original",
+          "metaphor_or_analogy_count": 9,
+          "total_responses": 80,
+          "min_percentage": 0,
+          "max_percentage": 30
+        },
+        {
+          "audience": "age_10",
+          "metaphor_or_analogy_count": 80,
+          "total_responses": 80,
+          "min_percentage": 100,
+          "max_percentage": 100
+        },
+        {
+          "audience": "college",
+          "metaphor_or_analogy_count": 61,
+          "total_responses": 80,
+          "min_percentage": 45,
+          "max_percentage": 90
+        },
+        {
+          "audience": "researchers",
+          "metaphor_or_analogy_count": 7,
+          "total_responses": 80,
+          "min_percentage": 0,
+          "max_percentage": 30
+        }
+      ]
+    }
+  ]
+}
