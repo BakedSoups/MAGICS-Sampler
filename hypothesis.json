@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "status": "pilot_complete_pending_human_validation",
+  "research_question": "Can an LLM construct and revise meaningful cross-domain mappings, and which prompt conditions elicit them?",
+  "interpretation_boundary": "Behavioral evidence of flexible mapping cannot establish consciousness, absence from training, or a parameter-level mechanism.",
+  "generator": "gpt-5",
+  "judge": "gpt-4.1",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "Explicit generation yields comparisons with at least two supported relational links and no annotated false implications.",
+      "primary_metric": "meaningful_mapping",
+      "status": "descriptive_support_pending_validation",
+      "observation": "GPT-4o baseline generation: 6/6 comparison presence and automated meaningful_mapping. Many source worlds are stipulated or magical; not a grounded-novelty result."
+    },
+    {
+      "id": "H2",
+      "prediction": "The model revises a previously generated comparison when one underlying rule changes while preserving the other rules.",
+      "primary_metric": "adaptation_success",
+      "status": "descriptive_support_pending_validation",
+      "observation": "GPT-4o baseline adaptation: 6/6; constrained followup adaptation: 6/6; GPT-5 smoke adaptation: 3/3. Explicit change instructions and lack of unchanged-rule control limit interpretation."
+    },
+    {
+      "id": "H3",
+      "prediction": "Beginner explanations produce more spontaneous comparisons than literal rule summaries at the same requested answer length.",
+      "primary_metric": "comparison_presence",
+      "status": "descriptive_support_small_pilot",
+      "observation": "GPT-4o beginner 5/6, summary 1/6, advice 0/6, explicit 6/6; only three systems and two trials each."
+    },
+    {
+      "id": "H4",
+      "prediction": "Longer input does not necessarily increase visible output length under an explicit answer-length instruction.",
+      "primary_metric": "within_system_long_minus_short_output_words",
+      "status": "supported_as_counterexample_to_universal_more_input_more_output_claim",
+      "observation": "Fixed-length long vs short: 103.75 vs 103.75 mean visible words (24 answers per level); free length: 203.375 vs 235.2083. This does not establish a general negative length effect."
+    },
+    {
+      "id": "H5",
+      "prediction": "An unchanged-rule control produces fewer substantive mapping revisions than an actual rule change.",
+      "primary_metric": "substantive_revision_rate",
+      "status": "not_tested",
+      "reason": "Stopped after targeted discrimination probe; unchanged-rule control remains future work."
+    },
+    {
+      "id": "H6",
+      "prediction": "Meaningful mappings remain possible when the prompt forbids invented source-domain behaviors; complete rule coverage may decrease.",
+      "primary_metric": "meaningful_mapping plus qualitative ordinary-behavior audit",
+      "status": "inconclusive_measurement_and_compliance_limits",
+      "observation": "All six constrained generations contain comparisons; one explicitly retains magical fruit duplication. Judge scores conflate acknowledged source limitations with false target implications; no reliable grounding success rate claimed."
+    },
+    {
+      "id": "H7",
+      "prediction": "Comparison choices track the stated relationship across rule reversals, option-order reversals, and misleading surface names.",
+      "primary_metric": "deterministic_choice_accuracy_by_cue_and_relation",
+      "status": "descriptive_support_on_simple_probe",
+      "scope": "Supplemental relation discrimination; not a test of metaphor generation by itself.",
+      "observation": "48/48 parsed choices correct, with 24/24 neutral names and 24/24 misleading names; options reversed and rules reversed. Choices are deterministic scores. Each prompt explicitly asks to match the second rule; no claim of difficult or unconscious semantic processing."
+    }
+  ],
+  "collection_order": [
+    "creation smoke",
+    "inspect all smoke answers and judgments",
+    "creation and trigger pilots",
+    "context pilot",
+    "targeted followup if justified"
+  ],
+  "limits": {
+    "max_generated_answers_this_session": 400,
+    "max_output_tokens_per_call": 4096,
+    "stop_on": [
+      "authentication or billing failure",
+      "persistent transport failure",
+      "systematic rubric failure requiring redesign",
+      "planned pilot collection complete"
+    ],
+    "max_judge_attempts_per_invocation": 3,
+    "note": "Some failed judgments were retried across invocations after rubric/format corrections; the three-attempt cap applied per invocation, not over the entire session. All returned judge usage was retained; initial HTTP errors lack usage."
+  },
+  "decision_log": [
+    {
+      "stage": "setup",
+      "decision": "Use temporary Python environment because saved interpreters are empty. Fix judge input JSON requirement; reuse saved answer. Allow up to four concurrent independent answers, with dependency waves and locked append-only saves."
+    },
+    {
+      "stage": "first_two_smoke_generations",
+      "observation": "Nectar vials magically duplicate and alter expiry; a fixed hourglass crack is stipulated to lose exactly a tenth. The initial rubric accepts these. This can demonstrate imaginative construction without independently demonstrating grounded source-domain inference.",
+      "decision": "Add constrained familiar-process generation/adaptation followup. Audit source plausibility separately; do not retroactively change baseline labels."
+    },
+    {
+      "stage": "pilot_design",
+      "decision": "Keep the nine-answer GPT-5 smoke study separate. Run two trials per case with GPT-4o for the four pilot sets (162 answers), using the existing accessible model from the project; this is a separate model-specific exploratory dataset, not pooled model estimates. GPT-5 smoke has long generation latency. No model-ranking inference from unequal samples."
+    },
+    {
+      "stage": "after_171_answers",
+      "decision": "Stop further open-ended generation. Add 48 matched relational-choice answers (24 cases \u00d7 two trials), with A/B order reversed and neutral/misleading names. Stop collection after this probe and synthesize limitations."
+    },
+    {
+      "stage": "evaluator_repairs",
+      "decision": "Exact evidence validation rejected altered quotes and source-only excerpts. Corrective feedback moved outside data payload, evidence source clarified, conditional success fields schema-enforced. Rubric and output format changed during this adaptive pilot; new records store rubric hashes. These data are not a frozen confirmatory study."
+    },
+    {
+      "stage": "collection_stop",
+      "decision": "Collected all 219 answers. Non-choice experiments have 171/171 accepted judgments. Choice answers have 48/48 deterministic scores; 42 optional metaphor judgments succeeded and six failed. No more paid judging is needed for choice accuracy. A/B scoring is now local in future runs."
+    },
+    {
+      "stage": "quality_audit",
+      "decision": "Reviewed all 18 GPT-4o baseline creation answers and 12 grounded followup answers. This is an assistant audit, not independent human validation. Do not present limitation-success or meaningful-mapping labels as validated quality rates."
+    }
+  ],
+  "pilot_generator": "gpt-4o",
+  "planned_generated_answers": 219,
+  "observed_generated_answers": 219,
+  "tracked_usage": {
+    "saved_generation_calls": 219,
+    "input_tokens": 441259,
+    "output_tokens": 129450,
+    "total_tokens": 570709,
+    "saved_judge_attempts": 375
+  },
+  "max_observed_judge_attempts_for_one_answer": 10
+}

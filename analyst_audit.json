@@ -1,0 +1,218 @@
+{
+  "assessor": "Codex primary assistant",
+  "method": "Qualitative review after collection; not blind, not independent human annotation",
+  "scope": "All 18 GPT-4o creation answers and 12 grounded followup answers",
+  "conclusion": "Use automated presence/adaptation labels descriptively. Do not treat automated limitation success or meaningful_mapping percentages as validated quality estimates.",
+  "reviews": [
+    {
+      "study": "creation_pilot",
+      "key": "f18a3b5e543177b8434b87985e60cc9618ac0931cc1ad9bfc8c51f2bd15be8f2",
+      "case_id": "selo/generate",
+      "trial": 2,
+      "note": "The answer maps the stated relationships, but source behavior is tailored to the target. This does not independently establish a familiar source process or training novelty. Magical duplication is explicit."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "2e37400664d3fa9103e9422d37c4ddb73c36b87cf958deb48036861d412e01e9",
+      "case_id": "nava/generate",
+      "trial": 2,
+      "note": "The answer maps the stated relationships, but source behavior is tailored to the target. This does not independently establish a familiar source process or training novelty."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "7ab9e0d7f1626e404a998ffc120376c76d8fc435d440ebf1cfada8dbb6441752",
+      "case_id": "vemi/generate",
+      "trial": 1,
+      "note": "The answer maps the stated relationships, but source behavior is tailored to the target. This does not independently establish a familiar source process or training novelty."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "eaa99b45ffec909a713e43d90a31a8351515a9c1493a8a7d27575eed26923597",
+      "case_id": "vemi/generate",
+      "trial": 2,
+      "note": "The answer maps the stated relationships, but source behavior is tailored to the target. This does not independently establish a familiar source process or training novelty."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "cc2d1ba7cb117d7c011fb90d044300cd22c195f27bb94485c310c9be4c34a4a8",
+      "case_id": "nava/generate",
+      "trial": 1,
+      "note": "The answer maps the stated relationships, but source behavior is tailored to the target. This does not independently establish a familiar source process or training novelty."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "b51add52cf06f9f01b4bcb608d7f6b6b6645b8c3f00364117d46e25caa242b66",
+      "case_id": "selo/generate",
+      "trial": 1,
+      "note": "The answer maps the stated relationships, but source behavior is tailored to the target. This does not independently establish a familiar source process or training novelty. Magical duplication is explicit."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "e7cdced2197c5973d1b35fb39f32763e3d58a69486861654e77b170c8b7bb51c",
+      "case_id": "selo/adapt",
+      "trial": 2,
+      "note": "The response changes the requested relation and preserves the main unchanged rule. This is compatible with flexible construction, but the target change is explicitly supplied; a no-change control was not collected."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "ffcb0961db0d773372225f41fc3e76b2446930a8e49d2c7e601e0eb55b81fd95",
+      "case_id": "vemi/adapt",
+      "trial": 1,
+      "note": "The response changes the requested relation and preserves the main unchanged rule. This is compatible with flexible construction, but the target change is explicitly supplied; a no-change control was not collected."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "aec983effc1f601e086b78ef015e083278bdea562ba205b4a0127bc969ce2e86",
+      "case_id": "selo/limits",
+      "trial": 1,
+      "note": "Judge over-credit concern: the critique says the original might remain unchanged, but the earlier fruit metaphor explicitly says both fruits ripen a day faster. The limitation is not clearly a genuine mismatch."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "03e7b838a34f1c9a4db1b378ba69e35285cdd1e5b6d91137ddb6f1cf76f273e4",
+      "case_id": "selo/adapt",
+      "trial": 1,
+      "note": "The response changes the requested relation and preserves the main unchanged rule. This is compatible with flexible construction, but the target change is explicitly supplied; a no-change control was not collected."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "d12cec767db58444838591efee709ebd8f3a3f0eee98002bc86f320fe83c60b4",
+      "case_id": "vemi/adapt",
+      "trial": 2,
+      "note": "The response changes the requested relation and preserves the main unchanged rule. This is compatible with flexible construction, but the target change is explicitly supplied; a no-change control was not collected."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "b64913435883e1ab0b902c7f7274cac99d376cd01cc854e5ddae1d9328fc209a",
+      "case_id": "nava/adapt",
+      "trial": 2,
+      "note": "The response changes the requested relation and preserves the main unchanged rule. This is compatible with flexible construction, but the target change is explicitly supplied; a no-change control was not collected."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "72cdbe2c349823018e55bc817ad7c3d1248cfed67bd26b57744e9c6c34a6c325",
+      "case_id": "nava/adapt",
+      "trial": 1,
+      "note": "The response changes the requested relation and preserves the main unchanged rule. This is compatible with flexible construction, but the target change is explicitly supplied; a no-change control was not collected."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "04582cf36a54e65224ce59c65daef86d0d45496557cacbde405601effbba5bec",
+      "case_id": "nava/limits",
+      "trial": 2,
+      "note": "Judge over-credit concern: the critique asserts loss occurs only at the end of each day. The rules specify a daily proportion but do not specify end-of-day timing. This interpretation should not be treated as a verified rule."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "0be6654d793d916680b04a305cacab0ee7393e799d0b7a073399ab1f6ed135bd",
+      "case_id": "nava/limits",
+      "trial": 1,
+      "note": "Judge over-credit concern: distinguishes natural loss from deliberately designed loss; the rules do not state that design intent is a requirement. The critique may invent a distinction."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "7daf5cfc6d0343be87bf344ff7d981d71fa87dbcc2fa04d98e5805ac35fc3d29",
+      "case_id": "vemi/limits",
+      "trial": 2,
+      "note": "The critique discusses a source/target difference, but whether it is a misleading implication rather than an ordinary analogy limitation needs independent human adjudication."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "f02ba2a57a1750c1ded9a3fa61183cd42d2208ff3d76fecacbd933837a7e0111",
+      "case_id": "selo/limits",
+      "trial": 2,
+      "note": "The critique discusses a source/target difference, but whether it is a misleading implication rather than an ordinary analogy limitation needs independent human adjudication."
+    },
+    {
+      "study": "creation_pilot",
+      "key": "38cc9b1a73ec201da7f27d3e114f6a4a4eeb71c6d9788d3096c7f06087159d6f",
+      "case_id": "vemi/limits",
+      "trial": 1,
+      "note": "The critique identifies an intelligible potential mismatch: simultaneous musical performance versus approvals that need not be simultaneous. This is a possible misleading implication, not a contradiction explicitly asserted by the earlier answer."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "8640db34f6d86c7cbc79b3e118d468d0bb015f426392686115294407f6cfe23a",
+      "case_id": "grounded/vemi/generate",
+      "trial": 1,
+      "note": "A grounded-source constraint was requested. Potluck consensus is familiar but universal unanimity and automatic decision cancellation are not ordinary requirements of all potlucks. Some versions acknowledge this; others merely stipulate it."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "8e775d6ab8fa12bba7ecbb874f3d8ff491b90b1fdb4a5b29f871f07dc09b9506",
+      "case_id": "grounded/selo/generate",
+      "trial": 2,
+      "note": "A grounded-source constraint was requested. Uses a modified library policy and acknowledges a mismatch with real libraries. An invented institutional policy is not magic, but should not be equated with ordinary library behavior. An acknowledged mismatch is not automatically a false target assertion."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "b862ee81acd0c2d213d7a1620500c31e1f6416a5ead614842071bb081dddc9e8",
+      "case_id": "grounded/selo/generate",
+      "trial": 1,
+      "note": "A grounded-source constraint was requested. The answer explicitly says fruit magically splits, violating the no-magic instruction. Its assertion that freshness represents single-use is also a weak mapping."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "d00ef7ed7159ba0ba168ff3783ecbc92abf563e5e0a3bb071fe384e15675b0fb",
+      "case_id": "grounded/nava/generate",
+      "trial": 2,
+      "note": "A grounded-source constraint was requested. Combines evaporation and spillage and stipulates exact rates. It also asserts a fixed-deposit distinction absent from the target rules. Judge no-false-implication label deserves review."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "b948c28d16285bdda889b1bb08e9614f80a4f7f244fb2dcdcf3c715232d6932d",
+      "case_id": "grounded/nava/generate",
+      "trial": 1,
+      "note": "A grounded-source constraint was requested. Captures the qualitative relation but exact daily and transfer proportions are stipulated rather than guaranteed by the source process. Acknowledged limitations should be separated from asserted false implications."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "b0e2170706263e7399848c68c8dc860104e0348badea6b3933182a8ba78034d6",
+      "case_id": "grounded/vemi/generate",
+      "trial": 2,
+      "note": "A grounded-source constraint was requested. Potluck consensus is familiar but universal unanimity and automatic decision cancellation are not ordinary requirements of all potlucks. Some versions acknowledge this; others merely stipulate it."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "5bb4e01ebf001bd655908dd54363fb1c35d88e55a56e0c65ac50e92246ca5534",
+      "case_id": "grounded/selo/adapt",
+      "trial": 2,
+      "note": "A grounded-source constraint was requested. Uses a modified library policy and acknowledges a mismatch with real libraries. An invented institutional policy is not magic, but should not be equated with ordinary library behavior. An acknowledged mismatch is not automatically a false target assertion."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "102ca8f8b38e0afb2bf43b32ce0f60bb181be58ddbce4632d82f8e77fbde1717",
+      "case_id": "grounded/vemi/adapt",
+      "trial": 2,
+      "note": "A grounded-source constraint was requested. Potluck consensus is familiar but universal unanimity and automatic decision cancellation are not ordinary requirements of all potlucks. Some versions acknowledge this; others merely stipulate it."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "8abfcb8c9bbb62b4d7c36f1393bca91f728c516a8506086a88dfd061e66c0e2c",
+      "case_id": "grounded/vemi/adapt",
+      "trial": 1,
+      "note": "A grounded-source constraint was requested. Potluck consensus is familiar but universal unanimity and automatic decision cancellation are not ordinary requirements of all potlucks. Some versions acknowledge this; others merely stipulate it."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "91f3745bb2c8ac3033e21114cef7c0450ad4d4050ccf4016afa4aac1926b391c",
+      "case_id": "grounded/nava/adapt",
+      "trial": 2,
+      "note": "A grounded-source constraint was requested. Captures the qualitative relation but exact daily and transfer proportions are stipulated rather than guaranteed by the source process. Acknowledged limitations should be separated from asserted false implications."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "0c797d177013e626f1f786d2461dca8ab6a1b30572b40d0d8828c028cfa9e0a0",
+      "case_id": "grounded/selo/adapt",
+      "trial": 1,
+      "note": "A grounded-source constraint was requested. Switches from fruit to library books but still says the book magically duplicates. This violates the source constraint despite a correct change in expiry direction."
+    },
+    {
+      "study": "grounded_followup_pilot",
+      "key": "05b555e46f1fed0733aae636bcb7ff3421276c739debbba26fae555ecab134c9",
+      "case_id": "grounded/nava/adapt",
+      "trial": 1,
+      "note": "A grounded-source constraint was requested. Changes the source from ice to banking; positive interest fits growth and fees fit transfer loss. The answer explicitly acknowledges that typical transfers do not halve the amount. The judge nevertheless lists that acknowledged limitation as a false implication, conflating limitation with assertion."
+    }
+  ]
+}

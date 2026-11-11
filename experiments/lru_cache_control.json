@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-5",
+    "gpt-4o"
+  ],
+  "judge_model": "gpt-4.1",
+  "trials": 5,
+  "max_output_tokens": 4096,
+  "random_seed": 42,
+  "description": "Presumed-familiar CS control: audience crossed with passage availability. No prompt asks for figurative language.",
+  "hypothesis": "Audience and passage availability may change spontaneous explanatory comparison use and fidelity in explanations of LRU caching.",
+  "sources": [
+    {
+      "url": "https://redis.io/docs/latest/reference/eviction/",
+      "use": "Background on cache replacement and LRU. The passage is a simplified ideal-LRU description, not a description of Redis implementation details."
+    }
+  ],
+  "excerpt": "A cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-used (LRU) replacement policy, accessing an item updates its recency. When space is needed, the item that has gone the longest without being accessed is removed.",
+  "design_notes": [
+    "This is a presumed-familiar baseline, not proof that a particular passage appeared in training.",
+    "Both audience conditions use identical excerpt content and requested length.",
+    "The no-excerpt conditions measure accessible prior knowledge; the reference rules are provided to the judge only.",
+    "Each generation is a separate API request without browsing tools or conversation carryover.",
+    "Compare ten-year-old versus CS graduate audiences; the audience treatment intentionally includes domain expertise.",
+    "An explanatory metaphor requires a cross-domain relationship; technical labels such as eviction alone are not sufficient.",
+    "Evaluate comparison presence separately from factual fidelity; acknowledge analogy limitations without automatically treating them as false assertions.",
+    "Five repetitions per cell provide exploratory estimates, not a reliable population comparison.",
+    "No recent-topic treatment is selected in this file; match its passage length, fact count, and answer length when adding it."
+  ],
+  "review_notes": {
+    "accepted_judge_output": "runs/<run>/records.jsonl: judgment",
+    "returned_judge_attempts": "runs/<run>/judge_attempts.jsonl: output_text",
+    "instructions": "Keep original judgments unchanged; record proposed corrections separately. Current reports do not automatically apply manual overrides.",
+    "limitation": "The current judge annotates comparisons and their mapped relationships. It does not yet provide a separate factual-accuracy score for every literal answer; add that before comparing overall explanation accuracy."
+  },
+  "cases": [
+    {
+      "id": "lru_cache/with_excerpt/age_10",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "with_excerpt/age_10",
+      "audience": "age_10",
+      "context_condition": "with_excerpt",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Accessing an item updates how recently it was used.",
+        "When replacement is needed, LRU removes the item whose last access was longest ago; recency is different from access frequency."
+      ],
+      "prompt": "Passage:\nA cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-used (LRU) replacement policy, accessing an item updates its recency. When space is needed, the item that has gone the longest without being accessed is removed.\n\nUsing the passage, explain how an LRU cache works to a ten-year-old. Answer in 120–150 words."
+    },
+    {
+      "id": "lru_cache/with_excerpt/graduate",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "with_excerpt/graduate",
+      "audience": "graduate",
+      "context_condition": "with_excerpt",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Accessing an item updates how recently it was used.",
+        "When replacement is needed, LRU removes the item whose last access was longest ago; recency is different from access frequency."
+      ],
+      "prompt": "Passage:\nA cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-used (LRU) replacement policy, accessing an item updates its recency. When space is needed, the item that has gone the longest without being accessed is removed.\n\nUsing the passage, explain how an LRU cache works to a graduate student in computer science. Answer in 120–150 words."
+    },
+    {
+      "id": "lru_cache/without_excerpt/age_10",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "without_excerpt/age_10",
+      "audience": "age_10",
+      "context_condition": "without_excerpt",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Accessing an item updates how recently it was used.",
+        "When replacement is needed, LRU removes the item whose last access was longest ago; recency is different from access frequency."
+      ],
+      "prompt": "Explain how an LRU cache works to a ten-year-old. Answer in 120–150 words."
+    },
+    {
+      "id": "lru_cache/without_excerpt/graduate",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "without_excerpt/graduate",
+      "audience": "graduate",
+      "context_condition": "without_excerpt",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Accessing an item updates how recently it was used.",
+        "When replacement is needed, LRU removes the item whose last access was longest ago; recency is different from access frequency."
+      ],
+      "prompt": "Explain how an LRU cache works to a graduate student in computer science. Answer in 120–150 words."
+    }
+  ]
+}

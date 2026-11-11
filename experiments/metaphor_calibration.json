@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "response": "A surprise party is like a secret plan.",
+      "expected_comparisons": 0,
+      "reason": "Category description, not a cross-domain mapping."
+    },
+    {
+      "response": "A nava is like a leaking tank: time accumulates, then gradually escapes.",
+      "expected_comparisons": 1,
+      "reason": "Storage and loss are mapped across domains."
+    },
+    {
+      "response": "She spilled the beans.",
+      "expected_conventional_metaphor": true,
+      "expected_idiom": true,
+      "expected_comparisons": 0,
+      "reason": "Study coding treats a standalone conventional idiom separately from developed comparisons."
+    },
+    {
+      "response": "A random forest contains decision trees.",
+      "expected_comparisons": 0,
+      "reason": "Technical terminology alone is excluded from explicit comparisons in this study."
+    }
+  ]
+}

@@ -82,3 +82,31 @@ One response per cell gives only 0% or 100%, not a reliable model ranking.
 Install dependencies if needed with `python -m pip install -r requirements.txt`.
 API implementation follows the official OpenAI quickstart:
 https://developers.openai.com/api/docs/quickstart
+
+## Metaphor creation and trigger study
+
+See [plan.md](plan.md) for the research rationale, design, run sizes, and interpretation limits.
+The separate `run_metaphor_study.py` defaults to an offline dry run; `--live` makes
+billed requests. Experiment JSONs: `metaphor_creation`, `metaphor_triggers`, and
+`metaphor_context` under `experiments/`. `metaphor_calibration.json` is a human
+rubric review resource. The original runner does not implement these new tasks.
+
+Run `.venv/bin/python report_metaphor_study.py` to create the creation study's
+HTML report, standalone SVG pies/scatters, metric/correlation CSVs, and a human
+review sheet. Pass `--experiment experiments/metaphor_triggers.json` or
+`--experiment experiments/metaphor_context.json` for the other sets. Before
+collection the reports show missing-data placeholders. No additional dependencies.
+
+The authorized pilot has now been collected: **219 answers**, with outcomes in
+[results.md](results.md), hypotheses/decisions in [hypothesis.json](hypothesis.json),
+and assistant audit concerns in [analyst_audit.json](analyst_audit.json).
+Run `python3 summarize_metaphor_study.py` offline to regenerate the combined report
+at `reports/metaphor_findings/index.html`. Actual model-specific pilot settings are
+in the `_pilot.json` experiment files. The matched relational-choice probe is
+scored directly from A/B answers and does not need a paid judge.
+
+The saved `.venv` and `venv` interpreters were empty in this workspace. This session
+used `/tmp/magics-study-env/bin/python` after installing `requirements.txt` there.
+The runner supports `--workers 1` through `--workers 4`; dependent cases run in
+later waves. Three corrective judge attempts are permitted per invocation, so
+repeated resumptions can incur more judge calls. Returned attempt usage is saved.

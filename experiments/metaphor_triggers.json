@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-5"
+  ],
+  "judge_model": "gpt-4.1",
+  "trials": 5,
+  "max_output_tokens": 4096,
+  "random_seed": 42,
+  "cases": [
+    {
+      "id": "nava/beginner",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "beginner",
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/summary",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "summary",
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nSummarize the rules of the system. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/advice",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "advice",
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nHelp a new user decide how to use this system. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/explicit",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "explicit",
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nUse a metaphor to explain how this system works. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/beginner",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "beginner",
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/summary",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "summary",
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nSummarize the rules of the system. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/advice",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "advice",
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nHelp a new user decide how to use this system. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/explicit",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "explicit",
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nUse a metaphor to explain how this system works. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/beginner",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "beginner",
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/summary",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "summary",
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nSummarize the rules of the system. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/advice",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "advice",
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nHelp a new user decide how to use this system. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/explicit",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "explicit",
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nUse a metaphor to explain how this system works. Answer in 100\u2013120 words."
+    }
+  ],
+  "description": "Purpose effects with constant system and requested length; explicit is a positive control."
+}
