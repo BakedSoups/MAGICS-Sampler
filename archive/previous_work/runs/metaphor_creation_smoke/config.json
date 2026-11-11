@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-5"
+  ],
+  "judge_model": "gpt-4.1",
+  "trials": 1,
+  "max_output_tokens": 4096,
+  "random_seed": 42,
+  "cases": [
+    {
+      "id": "nava/generate",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "generate",
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nCreate one metaphor to explain this system, and explain the relationships it captures. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/adapt",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "adapt",
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nRule change: Stored minutes now gain one tenth of their amount each day instead of losing any. Transfer losses stay the same.\n\nRevise the earlier comparison to fit the changed rule. Explain what you changed. Answer in 100\u2013120 words.",
+      "depends_on": "nava/generate",
+      "changed_rule": "Stored minutes now gain one tenth of their amount each day instead of losing any. Transfer losses stay the same."
+    },
+    {
+      "id": "nava/limits",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "limits",
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nIdentify one specific point where the earlier comparison could mislead someone about the rules. Answer in 100\u2013120 words.",
+      "depends_on": "nava/generate"
+    },
+    {
+      "id": "selo/generate",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "generate",
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nCreate one metaphor to explain this system, and explain the relationships it captures. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/adapt",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "adapt",
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nRule change: Sharing now makes both copies expire one day later instead of sooner. Each permission can still be used only once.\n\nRevise the earlier comparison to fit the changed rule. Explain what you changed. Answer in 100\u2013120 words.",
+      "depends_on": "selo/generate",
+      "changed_rule": "Sharing now makes both copies expire one day later instead of sooner. Each permission can still be used only once."
+    },
+    {
+      "id": "selo/limits",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "limits",
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nIdentify one specific point where the earlier comparison could mislead someone about the rules. Answer in 100\u2013120 words.",
+      "depends_on": "selo/generate"
+    },
+    {
+      "id": "vemi/generate",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "generate",
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nCreate one metaphor to explain this system, and explain the relationships it captures. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/adapt",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "adapt",
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nRule change: Adding a member now preserves previous approvals; only the new member needs to approve. All members must still approve before an appointment is allocated.\n\nRevise the earlier comparison to fit the changed rule. Explain what you changed. Answer in 100\u2013120 words.",
+      "depends_on": "vemi/generate",
+      "changed_rule": "Adding a member now preserves previous approvals; only the new member needs to approve. All members must still approve before an appointment is allocated."
+    },
+    {
+      "id": "vemi/limits",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "limits",
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nIdentify one specific point where the earlier comparison could mislead someone about the rules. Answer in 100\u2013120 words.",
+      "depends_on": "vemi/generate"
+    }
+  ],
+  "description": "Paired generation, counterfactual adaptation, and limitations."
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "model": "gpt-4o",
+    "case_id": "surprise_party/age_10",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 1,
+        "percentage": 100.0
+      },
+      "idiom": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "case_id": "surprise_party/college",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 1,
+        "percentage": 100.0
+      },
+      "idiom": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "case_id": "surprise_party/original",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "idiom": {
+        "count": 1,
+        "percentage": 100.0
+      }
+    }
+  },
+  {
+    "model": "gpt-4o",
+    "case_id": "surprise_party/researchers",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "idiom": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    }
+  },
+  {
+    "model": "gpt-5",
+    "case_id": "surprise_party/age_10",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 1,
+        "percentage": 100.0
+      },
+      "idiom": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    }
+  },
+  {
+    "model": "gpt-5",
+    "case_id": "surprise_party/college",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 1,
+        "percentage": 100.0
+      },
+      "idiom": {
+        "count": 1,
+        "percentage": 100.0
+      }
+    }
+  },
+  {
+    "model": "gpt-5",
+    "case_id": "surprise_party/original",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "idiom": {
+        "count": 1,
+        "percentage": 100.0
+      }
+    }
+  },
+  {
+    "model": "gpt-5",
+    "case_id": "surprise_party/researchers",
+    "responses": 1,
+    "judged": 1,
+    "metrics": {
+      "metaphor_or_analogy": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "idiom": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    }
+  }
+]

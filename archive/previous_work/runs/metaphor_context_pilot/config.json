@@ -1,0 +1,877 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-4o"
+  ],
+  "judge_model": "gpt-4.1",
+  "trials": 2,
+  "max_output_tokens": 4096,
+  "random_seed": 42,
+  "cases": [
+    {
+      "id": "nava/none/none/free/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "none/none/free",
+      "background_length": "none",
+      "relevance": "none",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/none/none/fixed/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "none/none/fixed",
+      "background_length": "none",
+      "relevance": "none",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/short/relevant/free/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/relevant/free",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/short/relevant/fixed/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/relevant/fixed",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/short/unrelated/free/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/unrelated/free",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/short/unrelated/fixed/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/unrelated/fixed",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/long/relevant/free/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/relevant/free",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 4, user 5 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 5, user 6 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 6, user 7 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 7, user 8 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 8, user 9 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 9, user 10 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 10, user 11 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 11, user 12 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 12, user 13 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 13, user 14 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 14, user 15 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 15, user 16 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 16, user 17 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 17, user 18 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 18, user 19 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 19, user 20 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 20, user 21 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 21, user 22 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 22, user 23 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 23, user 24 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 24, user 25 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 25, user 26 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 26, user 27 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 27, user 28 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 28, user 29 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 29, user 30 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 30, user 31 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/long/relevant/fixed/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/relevant/fixed",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 4, user 5 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 5, user 6 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 6, user 7 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 7, user 8 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 8, user 9 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 9, user 10 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 10, user 11 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 11, user 12 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 12, user 13 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 13, user 14 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 14, user 15 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 15, user 16 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 16, user 17 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 17, user 18 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 18, user 19 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 19, user 20 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 20, user 21 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 21, user 22 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 22, user 23 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 23, user 24 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 24, user 25 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 25, user 26 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 26, user 27 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 27, user 28 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 28, user 29 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 29, user 30 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 30, user 31 reads the rules of the nava system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/long/unrelated/free/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/unrelated/free",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 4, room 5 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 5, room 6 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 6, room 7 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 7, room 8 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 8, room 9 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 9, room 10 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 10, room 11 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 11, room 12 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 12, room 13 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 13, room 14 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 14, room 15 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 15, room 16 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 16, room 17 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 17, room 18 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 18, room 19 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 19, room 20 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 20, room 21 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 21, room 22 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 22, room 23 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 23, room 24 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 24, room 25 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 25, room 26 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 26, room 27 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 27, room 28 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 28, room 29 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 29, room 30 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 30, room 31 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/long/unrelated/fixed/v0",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/unrelated/fixed",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 4, room 5 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 5, room 6 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 6, room 7 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 7, room 8 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 8, room 9 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 9, room 10 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 10, room 11 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 11, room 12 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 12, room 13 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 13, room 14 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 14, room 15 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 15, room 16 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 16, room 17 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 17, room 18 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 18, room 19 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 19, room 20 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 20, room 21 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 21, room 22 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 22, room 23 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 23, room 24 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 24, room 25 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 25, room 26 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 26, room 27 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 27, room 28 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 28, room 29 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 29, room 30 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 30, room 31 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/short/relevant/free/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/relevant/free",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nRecord 1 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/short/relevant/fixed/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/relevant/fixed",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nRecord 1 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/short/unrelated/free/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/unrelated/free",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/short/unrelated/fixed/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "short/unrelated/fixed",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/long/relevant/free/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/relevant/free",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nRecord 1 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 4 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 5 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 6 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 7 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 8 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 9 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 10 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 11 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 12 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 13 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 14 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 15 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 16 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 17 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 18 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 19 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 20 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 21 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 22 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 23 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 24 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 25 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 26 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 27 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 28 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 29 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 30 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/long/relevant/fixed/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/relevant/fixed",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nRecord 1 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 4 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 5 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 6 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 7 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 8 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 9 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 10 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 11 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 12 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 13 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 14 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 15 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 16 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 17 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 18 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 19 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 20 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 21 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 22 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 23 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 24 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 25 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 26 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 27 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 28 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 29 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 30 concerns a new nava user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "nava/long/unrelated/free/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/unrelated/free",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 4 concerns a rectangular desk in room 5. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 5 concerns a rectangular desk in room 6. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 6 concerns a rectangular desk in room 7. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 7 concerns a rectangular desk in room 8. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 8 concerns a rectangular desk in room 9. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 9 concerns a rectangular desk in room 10. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 10 concerns a rectangular desk in room 11. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 11 concerns a rectangular desk in room 12. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 12 concerns a rectangular desk in room 13. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 13 concerns a rectangular desk in room 14. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 14 concerns a rectangular desk in room 15. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 15 concerns a rectangular desk in room 16. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 16 concerns a rectangular desk in room 17. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 17 concerns a rectangular desk in room 18. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 18 concerns a rectangular desk in room 19. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 19 concerns a rectangular desk in room 20. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 20 concerns a rectangular desk in room 21. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 21 concerns a rectangular desk in room 22. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 22 concerns a rectangular desk in room 23. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 23 concerns a rectangular desk in room 24. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 24 concerns a rectangular desk in room 25. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 25 concerns a rectangular desk in room 26. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 26 concerns a rectangular desk in room 27. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 27 concerns a rectangular desk in room 28. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 28 concerns a rectangular desk in room 29. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 29 concerns a rectangular desk in room 30. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 30 concerns a rectangular desk in room 31. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "nava/long/unrelated/fixed/v1",
+      "task": "metaphor_study",
+      "system": "nava",
+      "condition": "long/unrelated/fixed",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A nava stores unused minutes.",
+        "Stored minutes lose one tenth of their amount each day.",
+        "People can transfer minutes, but each transfer loses half the transferred amount."
+      ],
+      "prompt": "Rules of an invented system:\nA nava stores unused minutes.\nStored minutes lose one tenth of their amount each day.\nPeople can transfer minutes, but each transfer loses half the transferred amount.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 4 concerns a rectangular desk in room 5. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 5 concerns a rectangular desk in room 6. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 6 concerns a rectangular desk in room 7. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 7 concerns a rectangular desk in room 8. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 8 concerns a rectangular desk in room 9. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 9 concerns a rectangular desk in room 10. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 10 concerns a rectangular desk in room 11. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 11 concerns a rectangular desk in room 12. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 12 concerns a rectangular desk in room 13. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 13 concerns a rectangular desk in room 14. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 14 concerns a rectangular desk in room 15. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 15 concerns a rectangular desk in room 16. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 16 concerns a rectangular desk in room 17. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 17 concerns a rectangular desk in room 18. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 18 concerns a rectangular desk in room 19. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 19 concerns a rectangular desk in room 20. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 20 concerns a rectangular desk in room 21. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 21 concerns a rectangular desk in room 22. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 22 concerns a rectangular desk in room 23. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 23 concerns a rectangular desk in room 24. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 24 concerns a rectangular desk in room 25. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 25 concerns a rectangular desk in room 26. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 26 concerns a rectangular desk in room 27. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 27 concerns a rectangular desk in room 28. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 28 concerns a rectangular desk in room 29. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 29 concerns a rectangular desk in room 30. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 30 concerns a rectangular desk in room 31. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/none/none/free/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "none/none/free",
+      "background_length": "none",
+      "relevance": "none",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/none/none/fixed/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "none/none/fixed",
+      "background_length": "none",
+      "relevance": "none",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/short/relevant/free/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/relevant/free",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/short/relevant/fixed/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/relevant/fixed",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/short/unrelated/free/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/unrelated/free",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/short/unrelated/fixed/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/unrelated/fixed",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/long/relevant/free/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/relevant/free",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 4, user 5 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 5, user 6 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 6, user 7 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 7, user 8 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 8, user 9 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 9, user 10 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 10, user 11 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 11, user 12 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 12, user 13 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 13, user 14 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 14, user 15 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 15, user 16 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 16, user 17 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 17, user 18 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 18, user 19 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 19, user 20 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 20, user 21 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 21, user 22 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 22, user 23 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 23, user 24 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 24, user 25 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 25, user 26 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 26, user 27 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 27, user 28 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 28, user 29 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 29, user 30 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 30, user 31 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/long/relevant/fixed/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/relevant/fixed",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 4, user 5 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 5, user 6 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 6, user 7 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 7, user 8 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 8, user 9 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 9, user 10 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 10, user 11 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 11, user 12 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 12, user 13 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 13, user 14 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 14, user 15 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 15, user 16 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 16, user 17 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 17, user 18 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 18, user 19 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 19, user 20 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 20, user 21 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 21, user 22 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 22, user 23 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 23, user 24 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 24, user 25 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 25, user 26 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 26, user 27 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 27, user 28 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 28, user 29 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 29, user 30 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 30, user 31 reads the rules of the selo system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/long/unrelated/free/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/unrelated/free",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 4, room 5 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 5, room 6 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 6, room 7 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 7, room 8 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 8, room 9 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 9, room 10 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 10, room 11 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 11, room 12 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 12, room 13 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 13, room 14 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 14, room 15 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 15, room 16 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 16, room 17 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 17, room 18 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 18, room 19 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 19, room 20 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 20, room 21 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 21, room 22 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 22, room 23 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 23, room 24 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 24, room 25 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 25, room 26 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 26, room 27 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 27, room 28 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 28, room 29 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 29, room 30 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 30, room 31 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/long/unrelated/fixed/v0",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/unrelated/fixed",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 4, room 5 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 5, room 6 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 6, room 7 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 7, room 8 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 8, room 9 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 9, room 10 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 10, room 11 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 11, room 12 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 12, room 13 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 13, room 14 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 14, room 15 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 15, room 16 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 16, room 17 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 17, room 18 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 18, room 19 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 19, room 20 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 20, room 21 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 21, room 22 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 22, room 23 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 23, room 24 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 24, room 25 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 25, room 26 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 26, room 27 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 27, room 28 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 28, room 29 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 29, room 30 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 30, room 31 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/short/relevant/free/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/relevant/free",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nRecord 1 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/short/relevant/fixed/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/relevant/fixed",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nRecord 1 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/short/unrelated/free/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/unrelated/free",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/short/unrelated/fixed/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "short/unrelated/fixed",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/long/relevant/free/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/relevant/free",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nRecord 1 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 4 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 5 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 6 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 7 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 8 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 9 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 10 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 11 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 12 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 13 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 14 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 15 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 16 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 17 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 18 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 19 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 20 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 21 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 22 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 23 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 24 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 25 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 26 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 27 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 28 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 29 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 30 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/long/relevant/fixed/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/relevant/fixed",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nRecord 1 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 4 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 5 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 6 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 7 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 8 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 9 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 10 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 11 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 12 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 13 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 14 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 15 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 16 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 17 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 18 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 19 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 20 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 21 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 22 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 23 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 24 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 25 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 26 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 27 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 28 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 29 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 30 concerns a new selo user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "selo/long/unrelated/free/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/unrelated/free",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 4 concerns a rectangular desk in room 5. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 5 concerns a rectangular desk in room 6. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 6 concerns a rectangular desk in room 7. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 7 concerns a rectangular desk in room 8. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 8 concerns a rectangular desk in room 9. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 9 concerns a rectangular desk in room 10. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 10 concerns a rectangular desk in room 11. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 11 concerns a rectangular desk in room 12. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 12 concerns a rectangular desk in room 13. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 13 concerns a rectangular desk in room 14. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 14 concerns a rectangular desk in room 15. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 15 concerns a rectangular desk in room 16. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 16 concerns a rectangular desk in room 17. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 17 concerns a rectangular desk in room 18. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 18 concerns a rectangular desk in room 19. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 19 concerns a rectangular desk in room 20. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 20 concerns a rectangular desk in room 21. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 21 concerns a rectangular desk in room 22. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 22 concerns a rectangular desk in room 23. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 23 concerns a rectangular desk in room 24. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 24 concerns a rectangular desk in room 25. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 25 concerns a rectangular desk in room 26. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 26 concerns a rectangular desk in room 27. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 27 concerns a rectangular desk in room 28. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 28 concerns a rectangular desk in room 29. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 29 concerns a rectangular desk in room 30. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 30 concerns a rectangular desk in room 31. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "selo/long/unrelated/fixed/v1",
+      "task": "metaphor_study",
+      "system": "selo",
+      "condition": "long/unrelated/fixed",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A selo holds task permissions.",
+        "Each permission can be used only once.",
+        "Sharing a permission creates a copy, but makes both copies expire one day sooner."
+      ],
+      "prompt": "Rules of an invented system:\nA selo holds task permissions.\nEach permission can be used only once.\nSharing a permission creates a copy, but makes both copies expire one day sooner.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 4 concerns a rectangular desk in room 5. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 5 concerns a rectangular desk in room 6. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 6 concerns a rectangular desk in room 7. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 7 concerns a rectangular desk in room 8. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 8 concerns a rectangular desk in room 9. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 9 concerns a rectangular desk in room 10. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 10 concerns a rectangular desk in room 11. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 11 concerns a rectangular desk in room 12. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 12 concerns a rectangular desk in room 13. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 13 concerns a rectangular desk in room 14. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 14 concerns a rectangular desk in room 15. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 15 concerns a rectangular desk in room 16. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 16 concerns a rectangular desk in room 17. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 17 concerns a rectangular desk in room 18. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 18 concerns a rectangular desk in room 19. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 19 concerns a rectangular desk in room 20. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 20 concerns a rectangular desk in room 21. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 21 concerns a rectangular desk in room 22. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 22 concerns a rectangular desk in room 23. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 23 concerns a rectangular desk in room 24. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 24 concerns a rectangular desk in room 25. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 25 concerns a rectangular desk in room 26. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 26 concerns a rectangular desk in room 27. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 27 concerns a rectangular desk in room 28. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 28 concerns a rectangular desk in room 29. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 29 concerns a rectangular desk in room 30. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 30 concerns a rectangular desk in room 31. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/none/none/free/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "none/none/free",
+      "background_length": "none",
+      "relevance": "none",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/none/none/fixed/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "none/none/fixed",
+      "background_length": "none",
+      "relevance": "none",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/short/relevant/free/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/relevant/free",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/short/relevant/fixed/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/relevant/fixed",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/short/unrelated/free/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/unrelated/free",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/short/unrelated/fixed/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/unrelated/fixed",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/long/relevant/free/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/relevant/free",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 4, user 5 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 5, user 6 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 6, user 7 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 7, user 8 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 8, user 9 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 9, user 10 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 10, user 11 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 11, user 12 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 12, user 13 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 13, user 14 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 14, user 15 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 15, user 16 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 16, user 17 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 17, user 18 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 18, user 19 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 19, user 20 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 20, user 21 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 21, user 22 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 22, user 23 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 23, user 24 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 24, user 25 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 25, user 26 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 26, user 27 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 27, user 28 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 28, user 29 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 29, user 30 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 30, user 31 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/long/relevant/fixed/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/relevant/fixed",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn example 1, user 2 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 2, user 3 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 3, user 4 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 4, user 5 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 5, user 6 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 6, user 7 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 7, user 8 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 8, user 9 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 9, user 10 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 10, user 11 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 11, user 12 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 12, user 13 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 13, user 14 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 14, user 15 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 15, user 16 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 16, user 17 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 17, user 18 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 18, user 19 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 19, user 20 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 20, user 21 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 21, user 22 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 22, user 23 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 23, user 24 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 24, user 25 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 25, user 26 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 26, user 27 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 27, user 28 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 28, user 29 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 29, user 30 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\nIn example 30, user 31 reads the rules of the vemi system before recording a decision. The user records the date and checks the stated conditions before acting.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/long/unrelated/free/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/unrelated/free",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 4, room 5 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 5, room 6 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 6, room 7 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 7, room 8 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 8, room 9 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 9, room 10 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 10, room 11 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 11, room 12 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 12, room 13 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 13, room 14 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 14, room 15 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 15, room 16 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 16, room 17 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 17, room 18 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 18, room 19 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 19, room 20 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 20, room 21 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 21, room 22 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 22, room 23 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 23, room 24 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 24, room 25 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 25, room 26 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 26, room 27 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 27, room 28 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 28, room 29 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 29, room 30 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 30, room 31 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/long/unrelated/fixed/v0",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/unrelated/fixed",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 0,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nIn record 1, room 2 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 2, room 3 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 3, room 4 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 4, room 5 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 5, room 6 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 6, room 7 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 7, room 8 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 8, room 9 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 9, room 10 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 10, room 11 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 11, room 12 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 12, room 13 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 13, room 14 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 14, room 15 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 15, room 16 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 16, room 17 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 17, room 18 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 18, room 19 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 19, room 20 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 20, room 21 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 21, room 22 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 22, room 23 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 23, room 24 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 24, room 25 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 25, room 26 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 26, room 27 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 27, room 28 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 28, room 29 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 29, room 30 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\nIn record 30, room 31 contains a numbered chair beside a rectangular desk. The inventory records the date and checks the listed furniture before closing.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/short/relevant/free/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/relevant/free",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nRecord 1 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/short/relevant/fixed/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/relevant/fixed",
+      "background_length": "short",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nRecord 1 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/short/unrelated/free/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/unrelated/free",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/short/unrelated/fixed/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "short/unrelated/fixed",
+      "background_length": "short",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/long/relevant/free/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/relevant/free",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nRecord 1 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 4 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 5 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 6 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 7 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 8 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 9 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 10 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 11 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 12 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 13 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 14 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 15 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 16 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 17 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 18 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 19 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 20 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 21 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 22 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 23 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 24 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 25 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 26 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 27 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 28 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 29 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 30 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/long/relevant/fixed/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/relevant/fixed",
+      "background_length": "long",
+      "relevance": "relevant",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nRecord 1 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 2 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 3 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 4 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 5 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 6 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 7 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 8 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 9 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 10 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 11 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 12 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 13 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 14 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 15 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 16 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 17 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 18 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 19 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 20 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 21 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 22 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 23 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 24 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 25 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 26 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 27 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 28 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 29 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\nRecord 30 concerns a new vemi user. Before making a choice, this user reads each stated rule and writes down the date and the decision for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    },
+    {
+      "id": "vemi/long/unrelated/free/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/unrelated/free",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "free",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 4 concerns a rectangular desk in room 5. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 5 concerns a rectangular desk in room 6. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 6 concerns a rectangular desk in room 7. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 7 concerns a rectangular desk in room 8. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 8 concerns a rectangular desk in room 9. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 9 concerns a rectangular desk in room 10. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 10 concerns a rectangular desk in room 11. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 11 concerns a rectangular desk in room 12. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 12 concerns a rectangular desk in room 13. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 13 concerns a rectangular desk in room 14. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 14 concerns a rectangular desk in room 15. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 15 concerns a rectangular desk in room 16. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 16 concerns a rectangular desk in room 17. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 17 concerns a rectangular desk in room 18. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 18 concerns a rectangular desk in room 19. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 19 concerns a rectangular desk in room 20. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 20 concerns a rectangular desk in room 21. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 21 concerns a rectangular desk in room 22. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 22 concerns a rectangular desk in room 23. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 23 concerns a rectangular desk in room 24. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 24 concerns a rectangular desk in room 25. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 25 concerns a rectangular desk in room 26. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 26 concerns a rectangular desk in room 27. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 27 concerns a rectangular desk in room 28. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 28 concerns a rectangular desk in room 29. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 29 concerns a rectangular desk in room 30. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 30 concerns a rectangular desk in room 31. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner."
+    },
+    {
+      "id": "vemi/long/unrelated/fixed/v1",
+      "task": "metaphor_study",
+      "system": "vemi",
+      "condition": "long/unrelated/fixed",
+      "background_length": "long",
+      "relevance": "unrelated",
+      "answer_length": "fixed",
+      "variant": 1,
+      "reference_rules": [
+        "A vemi allocates appointments among groups.",
+        "A group receives an appointment only when all its members approve.",
+        "Adding a member cancels all previous approvals until everyone approves again."
+      ],
+      "prompt": "Rules of an invented system:\nA vemi allocates appointments among groups.\nA group receives an appointment only when all its members approve.\nAdding a member cancels all previous approvals until everyone approves again.\n\nAdditional background:\nInventory entry 1 concerns a rectangular desk in room 2. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 2 concerns a rectangular desk in room 3. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 3 concerns a rectangular desk in room 4. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 4 concerns a rectangular desk in room 5. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 5 concerns a rectangular desk in room 6. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 6 concerns a rectangular desk in room 7. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 7 concerns a rectangular desk in room 8. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 8 concerns a rectangular desk in room 9. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 9 concerns a rectangular desk in room 10. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 10 concerns a rectangular desk in room 11. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 11 concerns a rectangular desk in room 12. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 12 concerns a rectangular desk in room 13. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 13 concerns a rectangular desk in room 14. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 14 concerns a rectangular desk in room 15. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 15 concerns a rectangular desk in room 16. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 16 concerns a rectangular desk in room 17. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 17 concerns a rectangular desk in room 18. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 18 concerns a rectangular desk in room 19. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 19 concerns a rectangular desk in room 20. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 20 concerns a rectangular desk in room 21. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 21 concerns a rectangular desk in room 22. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 22 concerns a rectangular desk in room 23. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 23 concerns a rectangular desk in room 24. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 24 concerns a rectangular desk in room 25. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 25 concerns a rectangular desk in room 26. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 26 concerns a rectangular desk in room 27. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 27 concerns a rectangular desk in room 28. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 28 concerns a rectangular desk in room 29. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 29 concerns a rectangular desk in room 30. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\nInventory entry 30 concerns a rectangular desk in room 31. Before completing the inventory, the recorder checks each numbered chair and writes down the date for later review.\n\nExplain how the system works to a beginner. Answer in 100\u2013120 words."
+    }
+  ],
+  "description": "Exploratory context quantity/relevance and output-length instruction experiment. Relevant administrative background has limited explanatory value; do not generalize to all relevant information."
+}

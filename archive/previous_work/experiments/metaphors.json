@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-5",
+    "o3-mini",
+    "gpt-4o",
+    "gpt-4.1-nano"
+  ],
+  "trials": 20,
+  "judge_model": "gpt-4.1",
+  "max_output_tokens": 4096,
+  "cases": [
+    {
+      "id": "random_forest/original",
+      "task": "language_detection",
+      "prompt": "how does random forest work?"
+    },
+    {
+      "id": "random_forest/age_10",
+      "task": "language_detection",
+      "prompt": "how does random forest work? explain like im 10"
+    },
+    {
+      "id": "random_forest/college",
+      "task": "language_detection",
+      "prompt": "how does random forest work? explain it for my college students"
+    },
+    {
+      "id": "random_forest/researchers",
+      "task": "language_detection",
+      "prompt": "how does random forest work? explain it for machine learning researchers"
+    },
+    {
+      "id": "water_temperature/original",
+      "task": "language_detection",
+      "prompt": "How do I measure the temperature of a cup of water?"
+    },
+    {
+      "id": "water_temperature/age_10",
+      "task": "language_detection",
+      "prompt": "How do I measure the temperature of a cup of water? explain like I’m 10."
+    },
+    {
+      "id": "water_temperature/college",
+      "task": "language_detection",
+      "prompt": "How do I measure the temperature of a cup of water? explain it for my college students."
+    },
+    {
+      "id": "water_temperature/researchers",
+      "task": "language_detection",
+      "prompt": "How do I measure the temperature of a cup of water? explain it for laboratory researchers."
+    }
+  ]
+}

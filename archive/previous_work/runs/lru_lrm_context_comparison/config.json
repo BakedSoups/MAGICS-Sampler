@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-5",
+    "gpt-4o"
+  ],
+  "judge_model": "gpt-4.1",
+  "trials": 5,
+  "max_output_tokens": 4096,
+  "random_seed": 42,
+  "description": "Paired CS experiment: presumed-familiar LRU versus recently introduced Redis LRM; audience crossed with excerpt availability. No generation prompt requests metaphor.",
+  "research_question": "Can a model accurately explain and spontaneously construct explanatory comparisons for a recently introduced policy from supplied context, relative to a familiar policy?",
+  "hypotheses": [
+    {
+      "id": "LRM_CONTEXT",
+      "prediction": "If no-excerpt LRM answers are less accurate, supplying its definition improves factual fidelity; this is evidence of context benefit, not proof of training absence."
+    },
+    {
+      "id": "SPONTANEOUS_MAPPING",
+      "prediction": "Any LRM comparison in context-supported answers preserves the critical rule that writes refresh recency and reads do not."
+    },
+    {
+      "id": "AUDIENCE",
+      "prediction": "Ten-year-old explanations introduce more explanatory comparisons than CS-graduate explanations; quality and presence are assessed separately."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://redis.io/blog/announcing-redis-86-performance-improvements-streams/",
+      "publication_date": "2026-02-10",
+      "use": "Announcement of Redis 8.6 LRM policies and read/write distinction."
+    },
+    {
+      "url": "https://redis.io/docs/latest/reference/eviction/",
+      "use": "LRU/LRM definitions and implementation caveat: Redis uses sampled approximation, not guaranteed globally oldest-item eviction."
+    }
+  ],
+  "policy_specs": {
+    "lru": {
+      "label": "LRU",
+      "topic": "an LRU cache replacement policy",
+      "familiarity": "presumed_familiar",
+      "excerpt": "A cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-used (LRU) replacement policy, reading or writing an item updates its recency. When space is needed, the policy prioritizes removing items that have gone longest without being read or written. Reading an item can therefore protect it from removal.",
+      "rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Both reading and writing update recency under LRU.",
+        "Replacement prioritizes items whose last access was longest ago.",
+        "Recency is different from access frequency; reading an item can protect it even if its value has not changed."
+      ],
+      "excerpt_word_count": 60
+    },
+    "lrm": {
+      "label": "LRM",
+      "topic": "Redis 8.6's LRM cache replacement policy",
+      "familiarity": "recent_feature_prior_knowledge_unverified",
+      "excerpt": "A cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-modified (LRM) replacement policy, writing an item updates its recency, but reading it does not. When space is needed, the policy prioritizes removing items that have gone longest without being modified. Reading an item cannot therefore protect it from removal.",
+      "rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Writing updates recency under LRM; reading does not.",
+        "Replacement prioritizes items whose last modification was longest ago.",
+        "An item may be removed even if it is read frequently, when it has not been modified recently."
+      ],
+      "excerpt_word_count": 61
+    }
+  },
+  "design_notes": [
+    "LRM is a recently introduced Redis feature, not a concept proven absent from a model's parameters. The acronym can itself reveal its meaning.",
+    "Both excerpts describe simplified replacement priorities. Redis implementations sample keys, so the prompts do not promise that the globally oldest item is always removed.",
+    "The same introductory sentences, number of sentences, requested answer length, and audience wording are used across policies; actual excerpt lengths are recorded below.",
+    "No-excerpt LRM prompts name Redis 8.6 and LRM but do not expand the acronym or supply its rule. Judge-only reference rules are not included in generation inputs.",
+    "If a model already explains LRM correctly without context, do not classify it as demonstrated prior-knowledge failure. Compare outcomes by model rather than pooling familiarity claims.",
+    "A no-excerpt failure does not prove training absence: unfamiliar naming, uncertainty, or difficulty can also explain it.",
+    "Each generation is an independent API request without web tools or previous-answer carryover.",
+    "Ordinary terms such as cache and eviction alone do not count as spontaneous explanatory comparisons.",
+    "The audience treatment includes age and CS expertise. Different subject difficulty and naming remain possible confounds despite the close policy match.",
+    "Compare factual accuracy across all answers. Compare metaphor quality only among answers containing a qualifying comparison; absence is not a quality failure.",
+    "This file is for run_metaphor_study.py. The older run_experiment.py overrides JSON settings and uses a different rubric."
+  ],
+  "review_notes": {
+    "accepted_judge_output": "runs/lru_lrm_context_comparison/records.jsonl: judgment",
+    "returned_judge_attempts": "runs/lru_lrm_context_comparison/judge_attempts.jsonl: output_text",
+    "manual_review": "Preserve original judgments; keep corrections separately. Current reports do not apply manual overrides.",
+    "current_engine_limitation": "The current judge assesses comparison mappings but does not independently score factual accuracy for every literal answer. Whole-answer factual accuracy must be reviewed or added to the rubric before testing LRM_CONTEXT."
+  },
+  "cases": [
+    {
+      "id": "lru/with_excerpt/age_10",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "with_excerpt/age_10",
+      "policy": "lru",
+      "audience": "age_10",
+      "context_condition": "with_excerpt",
+      "familiarity_condition": "presumed_familiar",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Both reading and writing update recency under LRU.",
+        "Replacement prioritizes items whose last access was longest ago.",
+        "Recency is different from access frequency; reading an item can protect it even if its value has not changed."
+      ],
+      "prompt": "Passage describing a simplified policy:\nA cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-used (LRU) replacement policy, reading or writing an item updates its recency. When space is needed, the policy prioritizes removing items that have gone longest without being read or written. Reading an item can therefore protect it from removal.\n\nUsing the passage, explain how an LRU cache replacement policy works to a ten-year-old. Answer in 120\u2013150 words."
+    },
+    {
+      "id": "lru/with_excerpt/graduate",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "with_excerpt/graduate",
+      "policy": "lru",
+      "audience": "graduate",
+      "context_condition": "with_excerpt",
+      "familiarity_condition": "presumed_familiar",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Both reading and writing update recency under LRU.",
+        "Replacement prioritizes items whose last access was longest ago.",
+        "Recency is different from access frequency; reading an item can protect it even if its value has not changed."
+      ],
+      "prompt": "Passage describing a simplified policy:\nA cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-used (LRU) replacement policy, reading or writing an item updates its recency. When space is needed, the policy prioritizes removing items that have gone longest without being read or written. Reading an item can therefore protect it from removal.\n\nUsing the passage, explain how an LRU cache replacement policy works to a graduate student in computer science. Answer in 120\u2013150 words."
+    },
+    {
+      "id": "lru/without_excerpt/age_10",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "without_excerpt/age_10",
+      "policy": "lru",
+      "audience": "age_10",
+      "context_condition": "without_excerpt",
+      "familiarity_condition": "presumed_familiar",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Both reading and writing update recency under LRU.",
+        "Replacement prioritizes items whose last access was longest ago.",
+        "Recency is different from access frequency; reading an item can protect it even if its value has not changed."
+      ],
+      "prompt": "Explain how an LRU cache replacement policy works to a ten-year-old. Answer in 120\u2013150 words."
+    },
+    {
+      "id": "lru/without_excerpt/graduate",
+      "task": "metaphor_study",
+      "system": "lru_cache",
+      "condition": "without_excerpt/graduate",
+      "policy": "lru",
+      "audience": "graduate",
+      "context_condition": "without_excerpt",
+      "familiarity_condition": "presumed_familiar",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Both reading and writing update recency under LRU.",
+        "Replacement prioritizes items whose last access was longest ago.",
+        "Recency is different from access frequency; reading an item can protect it even if its value has not changed."
+      ],
+      "prompt": "Explain how an LRU cache replacement policy works to a graduate student in computer science. Answer in 120\u2013150 words."
+    },
+    {
+      "id": "lrm/with_excerpt/age_10",
+      "task": "metaphor_study",
+      "system": "lrm_cache",
+      "condition": "with_excerpt/age_10",
+      "policy": "lrm",
+      "audience": "age_10",
+      "context_condition": "with_excerpt",
+      "familiarity_condition": "recent_feature_prior_knowledge_unverified",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Writing updates recency under LRM; reading does not.",
+        "Replacement prioritizes items whose last modification was longest ago.",
+        "An item may be removed even if it is read frequently, when it has not been modified recently."
+      ],
+      "prompt": "Passage describing a simplified policy:\nA cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-modified (LRM) replacement policy, writing an item updates its recency, but reading it does not. When space is needed, the policy prioritizes removing items that have gone longest without being modified. Reading an item cannot therefore protect it from removal.\n\nUsing the passage, explain how Redis 8.6's LRM cache replacement policy works to a ten-year-old. Answer in 120\u2013150 words."
+    },
+    {
+      "id": "lrm/with_excerpt/graduate",
+      "task": "metaphor_study",
+      "system": "lrm_cache",
+      "condition": "with_excerpt/graduate",
+      "policy": "lrm",
+      "audience": "graduate",
+      "context_condition": "with_excerpt",
+      "familiarity_condition": "recent_feature_prior_knowledge_unverified",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Writing updates recency under LRM; reading does not.",
+        "Replacement prioritizes items whose last modification was longest ago.",
+        "An item may be removed even if it is read frequently, when it has not been modified recently."
+      ],
+      "prompt": "Passage describing a simplified policy:\nA cache stores copies of data so that later requests can be answered more quickly. Its capacity is limited. Under a least-recently-modified (LRM) replacement policy, writing an item updates its recency, but reading it does not. When space is needed, the policy prioritizes removing items that have gone longest without being modified. Reading an item cannot therefore protect it from removal.\n\nUsing the passage, explain how Redis 8.6's LRM cache replacement policy works to a graduate student in computer science. Answer in 120\u2013150 words."
+    },
+    {
+      "id": "lrm/without_excerpt/age_10",
+      "task": "metaphor_study",
+      "system": "lrm_cache",
+      "condition": "without_excerpt/age_10",
+      "policy": "lrm",
+      "audience": "age_10",
+      "context_condition": "without_excerpt",
+      "familiarity_condition": "recent_feature_prior_knowledge_unverified",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Writing updates recency under LRM; reading does not.",
+        "Replacement prioritizes items whose last modification was longest ago.",
+        "An item may be removed even if it is read frequently, when it has not been modified recently."
+      ],
+      "prompt": "Explain how Redis 8.6's LRM cache replacement policy works to a ten-year-old. Answer in 120\u2013150 words."
+    },
+    {
+      "id": "lrm/without_excerpt/graduate",
+      "task": "metaphor_study",
+      "system": "lrm_cache",
+      "condition": "without_excerpt/graduate",
+      "policy": "lrm",
+      "audience": "graduate",
+      "context_condition": "without_excerpt",
+      "familiarity_condition": "recent_feature_prior_knowledge_unverified",
+      "answer_length": "fixed",
+      "requested_min_words": 120,
+      "requested_max_words": 150,
+      "reference_rules": [
+        "A cache stores copies of data to make later accesses faster.",
+        "The cache has limited capacity.",
+        "Writing updates recency under LRM; reading does not.",
+        "Replacement prioritizes items whose last modification was longest ago.",
+        "An item may be removed even if it is read frequently, when it has not been modified recently."
+      ],
+      "prompt": "Explain how Redis 8.6's LRM cache replacement policy works to a graduate student in computer science. Answer in 120\u2013150 words."
+    }
+  ]
+}

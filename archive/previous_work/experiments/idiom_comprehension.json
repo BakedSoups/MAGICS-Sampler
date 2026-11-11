@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-5",
+    "o3-mini",
+    "gpt-4o",
+    "gpt-4.1-nano"
+  ],
+  "trials": 20,
+  "judge_model": "gpt-4.1",
+  "max_output_tokens": 4096,
+  "cases": [
+    {
+      "id": "spill_beans",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nAfter keeping the surprise party secret for weeks, Maya spilled the beans.",
+      "expected_kind": "idiomatic",
+      "reference_meaning": "Maya revealed the secret."
+    },
+    {
+      "id": "spill_beans_literal",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nWhile cooking, Maya spilled the beans onto the kitchen floor.",
+      "expected_kind": "literal",
+      "reference_meaning": "Maya accidentally dropped actual beans."
+    },
+    {
+      "id": "break_ice",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nThe new teammates were silent, so Lee told a joke to break the ice.",
+      "expected_kind": "idiomatic",
+      "reference_meaning": "Lee helped people feel comfortable and begin interacting."
+    },
+    {
+      "id": "break_ice_literal",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nLee used a metal tool to break the ice covering the pond.",
+      "expected_kind": "literal",
+      "reference_meaning": "Lee physically broke frozen water."
+    },
+    {
+      "id": "under_weather",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nSam felt under the weather and stayed home from work.",
+      "expected_kind": "idiomatic",
+      "reference_meaning": "Sam felt unwell."
+    },
+    {
+      "id": "kick_bucket",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nIn the old story, the farmer kicked the bucket at the age of ninety.",
+      "expected_kind": "idiomatic",
+      "reference_meaning": "The farmer died."
+    },
+    {
+      "id": "kick_bucket_literal",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nAnn kicked the bucket across the yard with her boot.",
+      "expected_kind": "literal",
+      "reference_meaning": "Ann physically struck a bucket with her foot."
+    },
+    {
+      "id": "on_fence",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nPat is on the fence about accepting the job offer.",
+      "expected_kind": "idiomatic",
+      "reference_meaning": "Pat is undecided."
+    },
+    {
+      "id": "on_fence_literal",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nThe cat sat on the fence between the two gardens.",
+      "expected_kind": "literal",
+      "reference_meaning": "The cat was physically sitting on a fence."
+    },
+    {
+      "id": "cold_feet",
+      "task": "idiom_comprehension",
+      "prompt": "Explain what the following sentence means in context. State whether the key expression is literal or idiomatic.\n\nJust before signing the contract, Jo got cold feet.",
+      "expected_kind": "idiomatic",
+      "reference_meaning": "Jo became nervous or hesitant about proceeding."
+    }
+  ]
+}

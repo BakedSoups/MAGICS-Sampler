@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-11-11T18:10:29.179375+00:00",
+  "experiment": "experiments/lru_lrm_context_comparison.json",
+  "generator_prompt_changes_during_collection": false,
+  "judge_rubric_sha256": "8efd3ea3e3b049d87f278d0f7457ce717589bb16cbe060f1e345b0cb09fcb8a4",
+  "runner_sha256": "b227ef9f59ca253b18d17ac49be725af41bc994e8844c6f5c1765ed89f7730c7",
+  "scope": "80 planned generation answers; up to three judge attempts per invocation. No browsing tools. Frozen generation prompts and judge rubric for this run. Judge outputs do not constitute whole-answer factual accuracy scores."
+}

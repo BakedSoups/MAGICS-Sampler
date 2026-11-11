@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-5",
+    "gpt-4o"
+  ],
+  "trials": 1,
+  "judge_model": "gpt-4.1",
+  "max_output_tokens": 4096,
+  "cases": [
+    {
+      "id": "surprise_party/original",
+      "task": "language_detection",
+      "prompt": "My friend accidentally revealed a surprise party. How would you describe what happened?"
+    },
+    {
+      "id": "surprise_party/age_10",
+      "task": "language_detection",
+      "prompt": "My friend accidentally revealed a surprise party. How would you describe what happened? Explain like I’m 10."
+    },
+    {
+      "id": "surprise_party/college",
+      "task": "language_detection",
+      "prompt": "My friend accidentally revealed a surprise party. How would you describe what happened? Explain it for my college students."
+    },
+    {
+      "id": "surprise_party/researchers",
+      "task": "language_detection",
+      "prompt": "My friend accidentally revealed a surprise party. How would you describe what happened? Explain it for linguistics researchers."
+    }
+  ]
+}

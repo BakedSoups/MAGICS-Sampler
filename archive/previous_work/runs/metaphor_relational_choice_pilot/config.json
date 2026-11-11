@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "models": [
+    "gpt-4o"
+  ],
+  "judge_model": "gpt-4.1",
+  "trials": 2,
+  "max_output_tokens": 4096,
+  "random_seed": 42,
+  "cases": [
+    {
+      "id": "storage/loss/neutral/reverse0",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "loss",
+      "cue": "neutral",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity decreases each day."
+      ],
+      "expected_choice": "A",
+      "prompt": "System R has these rules:\nThe system stores unused units.\nThe stored quantity decreases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. Ice kept in a warm room with no replacement.\nB. A savings account with positive net interest and no withdrawals.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "storage/loss/neutral/reverse1",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "loss",
+      "cue": "neutral",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity decreases each day."
+      ],
+      "expected_choice": "B",
+      "prompt": "System R has these rules:\nThe system stores unused units.\nThe stored quantity decreases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A savings account with positive net interest and no withdrawals.\nB. Ice kept in a warm room with no replacement.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "storage/loss/misleading/reverse0",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "loss",
+      "cue": "misleading",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity decreases each day."
+      ],
+      "expected_choice": "A",
+      "prompt": "System Savings Account has these rules:\nThe system stores unused units.\nThe stored quantity decreases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. Ice kept in a warm room with no replacement.\nB. A savings account with positive net interest and no withdrawals.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "storage/loss/misleading/reverse1",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "loss",
+      "cue": "misleading",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity decreases each day."
+      ],
+      "expected_choice": "B",
+      "prompt": "System Savings Account has these rules:\nThe system stores unused units.\nThe stored quantity decreases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A savings account with positive net interest and no withdrawals.\nB. Ice kept in a warm room with no replacement.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "storage/growth/neutral/reverse0",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "growth",
+      "cue": "neutral",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity increases each day."
+      ],
+      "expected_choice": "B",
+      "prompt": "System R has these rules:\nThe system stores unused units.\nThe stored quantity increases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. Ice kept in a warm room with no replacement.\nB. A savings account with positive net interest and no withdrawals.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "storage/growth/neutral/reverse1",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "growth",
+      "cue": "neutral",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity increases each day."
+      ],
+      "expected_choice": "A",
+      "prompt": "System R has these rules:\nThe system stores unused units.\nThe stored quantity increases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A savings account with positive net interest and no withdrawals.\nB. Ice kept in a warm room with no replacement.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "storage/growth/misleading/reverse0",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "growth",
+      "cue": "misleading",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity increases each day."
+      ],
+      "expected_choice": "B",
+      "prompt": "System Melting Ice has these rules:\nThe system stores unused units.\nThe stored quantity increases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. Ice kept in a warm room with no replacement.\nB. A savings account with positive net interest and no withdrawals.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "storage/growth/misleading/reverse1",
+      "task": "metaphor_study",
+      "system": "storage",
+      "condition": "mapping_choice",
+      "rule_variant": "growth",
+      "cue": "misleading",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores unused units.",
+        "The stored quantity increases each day."
+      ],
+      "expected_choice": "A",
+      "prompt": "System Melting Ice has these rules:\nThe system stores unused units.\nThe stored quantity increases each day.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A savings account with positive net interest and no withdrawals.\nB. Ice kept in a warm room with no replacement.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/all/neutral/reverse0",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "all",
+      "cue": "neutral",
+      "option_order": "original",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Every group member must approve before allocation."
+      ],
+      "expected_choice": "A",
+      "prompt": "System R has these rules:\nThe system allocates group appointments.\nEvery group member must approve before allocation.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A series circuit whose lamp lights only when every switch is closed.\nB. A parallel circuit whose lamp lights when any one branch switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/all/neutral/reverse1",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "all",
+      "cue": "neutral",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Every group member must approve before allocation."
+      ],
+      "expected_choice": "B",
+      "prompt": "System R has these rules:\nThe system allocates group appointments.\nEvery group member must approve before allocation.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A parallel circuit whose lamp lights when any one branch switch is closed.\nB. A series circuit whose lamp lights only when every switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/all/misleading/reverse0",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "all",
+      "cue": "misleading",
+      "option_order": "original",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Every group member must approve before allocation."
+      ],
+      "expected_choice": "A",
+      "prompt": "System Parallel has these rules:\nThe system allocates group appointments.\nEvery group member must approve before allocation.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A series circuit whose lamp lights only when every switch is closed.\nB. A parallel circuit whose lamp lights when any one branch switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/all/misleading/reverse1",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "all",
+      "cue": "misleading",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Every group member must approve before allocation."
+      ],
+      "expected_choice": "B",
+      "prompt": "System Parallel has these rules:\nThe system allocates group appointments.\nEvery group member must approve before allocation.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A parallel circuit whose lamp lights when any one branch switch is closed.\nB. A series circuit whose lamp lights only when every switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/any/neutral/reverse0",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "any",
+      "cue": "neutral",
+      "option_order": "original",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Any one member approving is enough to satisfy the approval requirement."
+      ],
+      "expected_choice": "B",
+      "prompt": "System R has these rules:\nThe system allocates group appointments.\nAny one member approving is enough to satisfy the approval requirement.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A series circuit whose lamp lights only when every switch is closed.\nB. A parallel circuit whose lamp lights when any one branch switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/any/neutral/reverse1",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "any",
+      "cue": "neutral",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Any one member approving is enough to satisfy the approval requirement."
+      ],
+      "expected_choice": "A",
+      "prompt": "System R has these rules:\nThe system allocates group appointments.\nAny one member approving is enough to satisfy the approval requirement.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A parallel circuit whose lamp lights when any one branch switch is closed.\nB. A series circuit whose lamp lights only when every switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/any/misleading/reverse0",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "any",
+      "cue": "misleading",
+      "option_order": "original",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Any one member approving is enough to satisfy the approval requirement."
+      ],
+      "expected_choice": "B",
+      "prompt": "System Series has these rules:\nThe system allocates group appointments.\nAny one member approving is enough to satisfy the approval requirement.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A series circuit whose lamp lights only when every switch is closed.\nB. A parallel circuit whose lamp lights when any one branch switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "approval/any/misleading/reverse1",
+      "task": "metaphor_study",
+      "system": "approval",
+      "condition": "mapping_choice",
+      "rule_variant": "any",
+      "cue": "misleading",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system allocates group appointments.",
+        "Any one member approving is enough to satisfy the approval requirement."
+      ],
+      "expected_choice": "A",
+      "prompt": "System Series has these rules:\nThe system allocates group appointments.\nAny one member approving is enough to satisfy the approval requirement.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A parallel circuit whose lamp lights when any one branch switch is closed.\nB. A series circuit whose lamp lights only when every switch is closed.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/single/neutral/reverse0",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "single",
+      "cue": "neutral",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission is consumed after one use."
+      ],
+      "expected_choice": "A",
+      "prompt": "System R has these rules:\nThe system stores task permissions.\nEach permission is consumed after one use.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A single-entry ticket that is consumed at entry.\nB. A reusable pass that remains valid after entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/single/neutral/reverse1",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "single",
+      "cue": "neutral",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission is consumed after one use."
+      ],
+      "expected_choice": "B",
+      "prompt": "System R has these rules:\nThe system stores task permissions.\nEach permission is consumed after one use.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A reusable pass that remains valid after entry.\nB. A single-entry ticket that is consumed at entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/single/misleading/reverse0",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "single",
+      "cue": "misleading",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission is consumed after one use."
+      ],
+      "expected_choice": "A",
+      "prompt": "System Reusable Pass has these rules:\nThe system stores task permissions.\nEach permission is consumed after one use.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A single-entry ticket that is consumed at entry.\nB. A reusable pass that remains valid after entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/single/misleading/reverse1",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "single",
+      "cue": "misleading",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission is consumed after one use."
+      ],
+      "expected_choice": "B",
+      "prompt": "System Reusable Pass has these rules:\nThe system stores task permissions.\nEach permission is consumed after one use.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A reusable pass that remains valid after entry.\nB. A single-entry ticket that is consumed at entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/reusable/neutral/reverse0",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "reusable",
+      "cue": "neutral",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission remains valid after use and can be used again."
+      ],
+      "expected_choice": "B",
+      "prompt": "System R has these rules:\nThe system stores task permissions.\nEach permission remains valid after use and can be used again.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A single-entry ticket that is consumed at entry.\nB. A reusable pass that remains valid after entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/reusable/neutral/reverse1",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "reusable",
+      "cue": "neutral",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission remains valid after use and can be used again."
+      ],
+      "expected_choice": "A",
+      "prompt": "System R has these rules:\nThe system stores task permissions.\nEach permission remains valid after use and can be used again.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A reusable pass that remains valid after entry.\nB. A single-entry ticket that is consumed at entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/reusable/misleading/reverse0",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "reusable",
+      "cue": "misleading",
+      "option_order": "original",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission remains valid after use and can be used again."
+      ],
+      "expected_choice": "B",
+      "prompt": "System Single Entry has these rules:\nThe system stores task permissions.\nEach permission remains valid after use and can be used again.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A single-entry ticket that is consumed at entry.\nB. A reusable pass that remains valid after entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    },
+    {
+      "id": "permission/reusable/misleading/reverse1",
+      "task": "metaphor_study",
+      "system": "permission",
+      "condition": "mapping_choice",
+      "rule_variant": "reusable",
+      "cue": "misleading",
+      "option_order": "reversed",
+      "reference_rules": [
+        "The system stores task permissions.",
+        "Each permission remains valid after use and can be used again."
+      ],
+      "expected_choice": "A",
+      "prompt": "System Single Entry has these rules:\nThe system stores task permissions.\nEach permission remains valid after use and can be used again.\n\nWhich comparison better matches the relationship described by the second rule?\nA. A reusable pass that remains valid after entry.\nB. A single-entry ticket that is consumed at entry.\n\nPut only A or B on the first line, then explain the choice in 50\u201380 words.",
+      "answer_length": "choice"
+    }
+  ],
+  "description": "Matched relational-choice probe with reversed option order and neutral or misleading system names. Tests discrimination, not spontaneous metaphor generation."
+}
